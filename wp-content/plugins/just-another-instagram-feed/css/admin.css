@@ -1,0 +1,39 @@
+/*
+  JAIF Admin CSS 
+  
+  @since 0.2
+ */
+.help-tab-content,
+.help-tab-content h2,
+.help-tab-content h3,
+.help-tab-content h4{
+  color:#5e5e5e;
+}
+.help-tab-content pre{
+  overflow:auto;
+}
+table.jaif-info-table{
+  
+}
+tr.jaif-info-header th{
+  border-bottom:2px solid #d6d6d6; 
+  border-right: 1px dashed #d6d6d6;
+}
+tr.jaif-info-row td{
+  padding: 2px 4px;
+  vertical-align: top;
+  border-right: 1px dashed #d6d6d6;
+}
+tr.jaif-info-row td:nth-last-child(1),
+tr.jaif-info-header th:nth-last-child(1){
+  border-right:none;
+}
+tr.jaif-info-row:nth-child(odd) td{
+  background: #eaeaea;
+  background: rgba(0,0,0,.07);
+}
+tr.jaif-info-row td.jaif-var-name{
+  text-align:center;
+  vertical-align:middle;  
+}
+ol.jaif-setup-steps li{}

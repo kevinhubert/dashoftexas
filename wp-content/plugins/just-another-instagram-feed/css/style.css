@@ -1,0 +1,202 @@
+/*
+  Just Another Instagram Feed Stylesheet
+*/
+.hidden{
+  display:none;
+}
+.jaif-media-loop.minimal{
+  position:relative;
+  width:100%;
+  margin:0;
+}
+.jaif-media-loop .jaif-media-loop-list{
+  margin:0;
+}
+.jaif-media-loop .jaif-loop-item a{
+  display:inline-block;
+  position:relative;
+  width:98%;
+  padding:1%;
+  margin:0;
+  border:0;
+  background:#282828;
+}
+.jaif-media-loop .jaif-loop-item{
+  float:left;
+  text-align:center;
+  position:relative;
+  list-style:none;
+}
+.jaif-media-loop.full .jaif-loop-item{
+  /*border:3px solid #282828;
+  
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+	  box-sizing:border-box;*/
+}
+.jaif-media-loop.minimal .jaif-loop-item{
+  text-align:center;
+  float:none;
+}
+.jaif-media-loop.minimal .jaif-loop-item a{
+  padding:1%;
+  margin:0;
+  border:none;
+  width:98%;
+  background:#d6d6d6;
+  display:inline-block;
+}
+.jaif-media-loop.minimal .jaif-loop-item a:hover{
+  background:#fff000;
+}
+.jaif-media-loop.full.columns-6 .jaif-loop-item{
+  width:14%;
+  margin:1.333%;
+}
+.jaif-media-loop.full.columns-5 .jaif-loop-item{
+  width:18%;
+  margin:1%;
+}
+.jaif-media-loop.full.columns-4 .jaif-loop-item{
+  width:21%;
+  margin:2%;
+}
+.jaif-media-loop.full.columns-3 .jaif-loop-item{
+  width:30%;
+  margin:1.666%;
+}
+.jaif-media-loop.full.columns-2 .jaif-loop-item{
+  width:48%;
+  margin:1%;
+}
+.jaif-media-loop.full.columns-1 .jaif-loop-item{
+  width:100%;
+}
+img.media-image,
+img.media-video{
+  width:100%;
+  vertical-align:bottom;
+}
+.instafeed-pagination{
+  text-align:center;
+}
+.jaif-social-wrap{
+  width:96%;
+  padding:2%;
+  text-align:left;
+  position:absolute;
+  display:none;
+  top:0;
+  left:0;
+  /*background:rgba(255,255,255,0.5);*/
+}
+.jaif-media-loop .jaif-loop-item:hover > .jaif-social-wrap{
+  display:block;
+}
+.jaif-media-loop .jaif-loop-item a.jaif-user-circle{
+  width:48px;
+  height:48px;
+  padding:0;
+  display:inline-block;
+  position:relative;
+  overflow:hidden;
+
+  -webkit-box-shadow:2px 2px 4px rgba(0,0,0,0.75);
+     -moz-box-shadow:2px 2px 4px rgba(0,0,0,0.75);
+       -o-box-shadow:2px 2px 4px rgba(0,0,0,0.75);
+	  box-shadow:2px 2px 4px rgba(0,0,0,0.75);
+    
+  -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+       -o-border-radius:50%;
+	  border-radius:50%;
+}
+img.jaif-user-pic{
+  width:100%;
+  height:auto;
+}
+.jaif-button{
+  font-size: 1.125em;
+  font-weight:bold;
+  width:100%;
+  
+  margin:0.5em 0;
+  padding:0.5em 0;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: 'Helvetica' 'Sans Serif';
+  text-decoration:none;
+  
+  border:none;
+  outline:none;
+  line-height:inherit;
+  
+  display:inline-block;
+  color:#d6d6d6;
+
+  background: #282828;
+  
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+       -o-border-radius:0;
+	  border-radius:0;
+}
+.jaif-button:hover{
+  color:#282828;
+  background:#fff000;
+}
+.instafeed-description{
+	color:#fff000;
+	text-align:left;
+}
+/* 
+	Carousel Styles 
+*/
+.rs-carousel-mask {
+	overflow: hidden;
+}
+.jaif-media-loop.minimal.rs-carousel .rs-carousel-mask{
+	max-height:320px;	
+}
+.rs-carousel-runner {
+	position: relative;
+}
+.rs-carousel-horizontal .rs-carousel-item {
+	float: left;
+}
+.rs-carousel-mask {
+	position: relative;
+}
+.rs-carousel-runner {
+	-moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.rs-carousel-transition .rs-carousel-runner {
+	-moz-transition: -moz-transform .400s ease;
+	-webkit-transition: -webkit-transform .400s ease;
+  -o-transition: -o-transform .400s ease;
+  -ms-transition: -ms-transform .400s ease;
+  transition: transform .400s ease;
+}
+.rs-carousel-action{
+	position:absolute;
+	display:none;
+	width:100%;
+	height:40px;
+	left:0;
+	opacity:0;
+	background:#000;	
+	z-index:5;
+}
+.rs-carousel-action-next{
+	bottom:0;
+}
+.rs-carousel-action-prev{
+	top:0;
+}
+.rs-carousel-action:hover{
+	opacity:0.25;
+}
