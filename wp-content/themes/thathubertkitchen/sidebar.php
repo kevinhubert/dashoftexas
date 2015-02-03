@@ -42,21 +42,6 @@
     </div>
 </div>
 -->
-<!-- AMAZON AFFILIATE -->
-<script type="text/javascript" language="javascript">
-  amzn_assoc_ad_type = "contextual";
-  amzn_assoc_tracking_id = "thathubertkit-20";
-  amzn_assoc_marketplace = "amazon";
-  amzn_assoc_region = "US";
-  amzn_assoc_placement = "QQRFQ5SCBXAN72UP";
-  amzn_assoc_linkid = "QQRFQ5SCBXAN72UP";
-  amzn_assoc_emphasize_categories = "16310101, 1055398, 284507";
-  amzn_assoc_fallback_products = "";
-  amzn_assoc_width = "300";
-  amzn_assoc_height = "250";
-</script>
-<script type="text/javascript" language="javascript" src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US&source=ac"></script>
-
 <!-- AD ONE -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- thathubertkitchen2 -->
@@ -74,12 +59,3 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<!-- AD THREE -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-4776256924229226"
-     data-ad-slot="3030864792"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
