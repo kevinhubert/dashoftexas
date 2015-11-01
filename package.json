@@ -1,0 +1,17 @@
+{
+  "name": "dashoftexas",
+  "version": "1.0.0",
+  "description": "dev environment for dashoftexas.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Hubert",
+  "license": "ISC",
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0",
+    "neat": "^1.2.2"
+  }
+}
