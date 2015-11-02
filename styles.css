@@ -5,15 +5,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/*Primary Color Palette */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #477dca;
+  background-color: #008cba;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -25,13 +26,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #3964a2;
-    color: #fff; }
+    background-color: #007095;
+    color: #ffffff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #477dca; }
+      background-color: #008cba; }
 
 fieldset {
   background-color: #f7f7f7;
@@ -43,7 +44,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-size: 1em; }
 
 label {
@@ -61,7 +62,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -72,8 +73,8 @@ select[multiple=multiple] {
     border-color: #b1b1b1; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #008cba;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 121, 161, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -143,8 +144,8 @@ th {
   vertical-align: middle; }
 
 body {
-  color: #333;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #606060;
+  font-family: "Open Sans";
   font-feature-settings: "kern", "liga", "pnum";
   font-size: 1em;
   line-height: 1.5; }
@@ -155,7 +156,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans";
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -164,11 +165,11 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #477dca;
+  color: #008cba;
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #355e98; }
+    color: #00698c; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -539,3 +540,12 @@ table {
 td,
 th {
   padding: 0; }
+
+.l-header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .l-header::after {
+    clear: both;
+    content: "";
+    display: table; }
