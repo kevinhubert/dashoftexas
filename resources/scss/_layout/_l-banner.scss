@@ -1,0 +1,11 @@
+.banner {
+	display: none;
+	@include media($tablet) {
+		display: block;
+		height: 70vh;
+		background-image: url(http://www.dashoftexas.com/wp-content/uploads/2015/10/MapleOatPecanBanner.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+} 

@@ -1,0 +1,4 @@
+// --- Grayscale --- //
+.gray-scale {
+	@include filter(grayscale(100%));
+}

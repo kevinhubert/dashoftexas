@@ -1,13 +1,26 @@
-// Sass configuration
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+// --- BROWSER SYNC --- //
 
-gulp.task('sass', function() {
-    gulp.src('./resources/scss/styles.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./'));
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
+
+// Static Server + watching scss/html files
+
+gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+        server: "./"
+    });
+    gulp.watch("resources/scss/**/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', function() {
-    gulp.watch('resources/scss/**/*.scss', ['sass']);
-})
+// Compile sass into CSS & auto-inject into browsers
+
+gulp.task('sass', function() {
+    return gulp.src("./resources/scss/styles.scss")
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest("./"))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', ['serve']);

@@ -16,15 +16,16 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 /*Primary Color Palette */
-$white: #ffffff;
+$white: #fff;
 $offWhite:#efefef;
 $red: #F54B1A;
 $blueLight: #008cba;
+$blueDark: #1B346C;
 $yellow: #E49B3D;
 
 $dark-gray: #606060;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #ddd; 
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -45,3 +46,9 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+$tablet: 600px;
+$desktop: 900px;
+
+$tablet: new-breakpoint(min-width $tablet);
+$desktop: new-breakpoint(min-width $desktop);
