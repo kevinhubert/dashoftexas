@@ -1,14 +1,18 @@
 .title {	
-	@include span-columns(12);
-	position: fixed;
-	background: $white;
+	@include display(flex);
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include align-items(center);
+	margin: 0 auto;
+	height: 65px;
+	color: $dark-gray;	
+	border-bottom: 1px solid $light-gray;
 	a {
 		color: $dark-gray;
 	}
 	&__text {
 		font-weight: 100;
 		margin: 0px;
-		display: inline-block;
 		&--strong {
 			color: $blueDark;
 			font-weight: 900;
@@ -23,12 +27,6 @@
 		}
 	}
 	@include media($tablet) {
-		@include span-columns(11);
-		@include display(flex);
-		@include justify-content(space-between);
-		@include align-items(center);
-		height: 65px;
-		color: $dark-gray;	
-		border-bottom: 1px solid $light-gray;
+
 	}
 }

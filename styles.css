@@ -549,21 +549,18 @@ img {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 15px; }
+  padding: 0 15px; }
   .container::after {
     clear: both;
     content: "";
     display: table; }
 
 .l-header {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 65px; }
-  .l-header::after {
-    clear: both;
-    content: "";
-    display: table; }
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 65px;
+  background: #fff; }
 
 .banner {
   display: none; }
@@ -577,18 +574,14 @@ img {
       background-position: center; } }
 
 .content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .content:last-child {
-    margin-right: 0; }
+  padding-top: 80px; }
   @media screen and (min-width: 600px) {
     .content {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 65.88078%;
+      padding-top: 30px; }
       .content:last-child {
         margin-right: 0; } }
 
@@ -615,20 +608,50 @@ img {
   font-size: 18px; }
 
 .title {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  position: fixed;
-  background: #fff; }
-  .title:last-child {
-    margin-right: 0; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin: 0 auto;
+  height: 65px;
+  color: #606060;
+  border-bottom: 1px solid #ddd; }
   .title a {
     color: #606060; }
   .title__text {
     font-weight: 100;
-    margin: 0px;
-    display: inline-block; }
+    margin: 0px; }
     .title__text--strong {
       color: #1B346C;
       font-weight: 900; }
@@ -645,52 +668,25 @@ img {
           display: flex;
           color: #F54B1A;
           font-size: 1.375rem; } }
-  @media screen and (min-width: 600px) {
-    .title {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 91.4702%;
-      display: -webkit-box;
-      display: -moz-box;
-      display: box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -moz-box-pack: justify;
-      box-pack: justify;
-      -webkit-justify-content: space-between;
-      -moz-justify-content: space-between;
-      -ms-justify-content: space-between;
-      -o-justify-content: space-between;
-      justify-content: space-between;
-      -ms-flex-pack: justify;
-      -webkit-box-align: center;
-      -moz-box-align: center;
-      box-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      -o-align-items: center;
-      align-items: center;
-      -ms-flex-align: center;
-      height: 65px;
-      color: #606060;
-      border-bottom: 1px solid #ddd; }
-      .title:last-child {
-        margin-right: 0; } }
 
 .post-title {
+  display: block;
+  text-align: center;
   color: #F54B1A;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100; }
+  @media screen and (min-width: 600px) {
+    .post-title {
+      font-size: 2rem; } }
 
 .post-date {
   color: #999;
   font-weight: 100;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px #F54B1A dashed;
+  padding-bottom: 15px;
+  margin-bottom: 20px; }
 
 .sidebar-title {
   text-align: center;

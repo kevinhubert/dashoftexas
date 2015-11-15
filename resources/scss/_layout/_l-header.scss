@@ -1,4 +1,7 @@
 .l-header {
-	@include outer-container;
+	position: fixed;
+	display: block;
+	width: 100%;
 	height: 65px;
+	background: $white;
 }
