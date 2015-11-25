@@ -1,0 +1,5 @@
+@mixin slide {
+	@include transition-property(all);
+	@include transition-duration(1s);
+	@include transition-timing-function(ease);
+}

@@ -1,0 +1,6 @@
+.instagram {
+	padding: 10px;
+	@include border-width(1px 1px 1px 1px);
+	border-style: solid;
+	border-color: $light-gray;
+}

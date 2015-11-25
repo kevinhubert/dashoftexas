@@ -1,0 +1,15 @@
+.continue {
+	background-color: $white;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid $blueLight;	
+	bottom: 0;
+	&__button {
+		&:hover {
+			color: $yellow; 
+			border-color: $yellow;
+			display: block;
+			width: 100%;			
+		}
+	}
+}

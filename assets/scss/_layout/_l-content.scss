@@ -1,7 +1,10 @@
 .content {
 	padding-top: 80px;
    	@include media($tablet) {
-		@include span-columns(8);
+		@include span-columns(9);
 		padding-top: 30px;
     }
+	@include media($desktop) {
+		@include span-columns(8);
+	}
 }

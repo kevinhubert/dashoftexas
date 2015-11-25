@@ -7,12 +7,19 @@
 	height: 65px;
 	color: $dark-gray;	
 	border-bottom: 1px solid $light-gray;
+	background: url(img/dashoftexas.png) center left no-repeat;
+	background-size: 50px;
+	padding-left: 65px;
 	a {
 		color: $dark-gray;
 	}
 	&__text {
 		font-weight: 100;
 		margin: 0px;
+		font-size: 1.5em;
+		@include media($desktop) {
+				font-size: 2em;
+			}
 		&--strong {
 			color: $blueDark;
 			font-weight: 900;

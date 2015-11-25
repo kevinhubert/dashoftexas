@@ -30,7 +30,6 @@ label {
 select[multiple=multiple] {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
@@ -46,7 +45,6 @@ select[multiple=multiple] {
 
   &:focus {
     border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
     outline: none;
   }
 
@@ -66,6 +64,15 @@ textarea {
 
 input[type="search"] {
   appearance: none;
+  background: transparent;
+  color: $white;
+  border-color: $white!important;
+  box-sizing: border-box !important;
+  margin-bottom: 0px;
+  @include placeholder {
+    color: $white;
+    font-weight: 100;
+  }
 }
 
 input[type="checkbox"],

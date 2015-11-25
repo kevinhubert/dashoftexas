@@ -1,0 +1,8 @@
+.fade-to-white {
+	position: absolute;
+	z-index: 50;
+	bottom: 64px;
+	width: 100%;
+	height: 80px;
+	@include background-image(linear-gradient(transparent, black 80%));		
+}
