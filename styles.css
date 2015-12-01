@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,600,800,300italic,700);
 html {
   box-sizing: border-box; }
 
@@ -878,7 +878,7 @@ img {
   background-size: 50px;
   padding-left: 65px; }
   .title a {
-    color: #606060; }
+    color: #1B346C; }
   .title__text {
     font-weight: 100;
     margin: 0px;
@@ -1037,6 +1037,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
   font-size: 5rem; }
   .callout__title {
     margin-bottom: 0;

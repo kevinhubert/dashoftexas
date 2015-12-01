@@ -4,6 +4,7 @@
 	@include centercenter;
 	text-align: center;
 	color: $white;
+	text-transform: uppercase;
 	font-size: rem(80px);
 	&__title {
 		margin-bottom: 0;
