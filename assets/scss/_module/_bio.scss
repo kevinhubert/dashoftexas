@@ -1,0 +1,18 @@
+.bio {
+	background: $offWhite;
+	text-align: center;
+	color: $dark-gray;
+	font-size: rem(16);
+	&__description {
+		padding: 15px;
+		margin: 0;
+	}
+	&__more {
+		display: block;
+		font-weight: bold;
+		color: $dark-gray;
+		font-style: italic;
+		font-size: 1.2em;
+		padding:10px 0;
+	}
+}

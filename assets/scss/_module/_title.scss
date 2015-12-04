@@ -28,6 +28,7 @@
 			display: none; 			
 			@include media($tablet) {
 				@include display(flex);
+				@include flex-shrink(0);
 				color: $red;
 				font-size: rem(22);
 			}
