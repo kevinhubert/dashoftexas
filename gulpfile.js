@@ -8,18 +8,19 @@ var sass        = require('gulp-sass');
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
-        server: "./"
+        proxy: "local.dashoftexas"
     });
     gulp.watch("assets/scss/**/*.scss", ['sass']);
     gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("*.php").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 
 gulp.task('sass', function() {
-    return gulp.src("./assets/scss/styles.scss")
+    return gulp.src("./assets/scss/style.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest("./style.css"))
+        .pipe(gulp.dest("./"))
         .pipe(browserSync.stream());
 });
 

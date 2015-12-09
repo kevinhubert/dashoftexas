@@ -6,8 +6,9 @@
 	<!-- CDN's -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-	<title>Dash of Texas</title>
-	<link rel="stylesheet" href="style.css">
+	<title><?php $blog_title = get_bloginfo(); ?></title>
+	<link rel="stylesheet" href="<?php site_url(); ?>/wp-content/themes/dashoftexas/style.css">
+	<?php include_once( "analyticstracking.php"); ?>
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -16,10 +17,10 @@
 	<header class="l-header">
 		<div class="container">
 			<div class="title">
-				<a href="">
+				<a href="<?php site_url(); ?>">
 					<h1 class="title__text">A DASH OF <span class="title__text--strong">TEXAS</span></h1>
 				</a>
-				<h2 class="title__text title__text--tagline">musings of a modern Austin kitchen</h2>	
+				<h2 class="title__text title__text--tagline"><?php echo get_bloginfo ( 'description' );  ?></h2>	
 				<span class="menu">
 					<div class="banner__slide"></div>
 					<div class="banner__slide"></div>
