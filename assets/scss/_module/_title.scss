@@ -14,9 +14,12 @@
 		color: $blueDark;
 	}
 	&__text {
-		font-weight: 100;
+		font-weight: 300;
 		margin: 0px;
 		font-size: 1.5em;
+		@include media($tablet) {
+				font-size: 1.8em;
+			}
 		@include media($desktop) {
 				font-size: 2em;
 			}
@@ -25,7 +28,9 @@
 			font-weight: 900;
 		}
 		&--tagline {
-			display: none; 			
+			display: none; 	
+			margin-left: auto;
+			padding-right: 1em;
 			@include media($tablet) {
 				@include display(flex);
 				@include flex-shrink(0);

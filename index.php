@@ -1,37 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width">
-	
-	<!-- CDN's -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	
-	<title>Dash of Texas</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-		<header class="l-header">	<!-- BEGIN HEADER -->
-		
-		
-			<div class="container">
-				<div class="title">
-					<a href="">
-						<h1 class="title__text">A DASH OF <span class="title__text--strong">TEXAS</span></h1>
-					</a>
-					<h2 class="title__text title__text--tagline">musings of a modern Austin kitchen</h2>	
-					<span class="menu">
-						<div class="banner__slide"></div>
-						<div class="banner__slide"></div>
-						<div class="banner__slide"></div> 
-					</span>			
-				</div>
-			</div>
-
-		
-		</header>	<!-- END HEADER -->
-
-
 
 		<div class="wrapper">  <!-- WRAPPER -->
 
@@ -66,7 +32,7 @@
 						<section class="content">
 							<artice class="post">
 								<a href="" class="post-title">Maple Oat Pecan Cookies</a>
-								<p class="post-date">Ocober 30th, 2015</p>
+								<p class="post-date">October 30th, 2015</p>
 								<img src="http://www.dashoftexas.com/wp-content/uploads/2015/10/MapleOatPecanTopPic.jpg" alt="">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium, omnis quia cumque reiciendis inventore distinctio impedit, architecto cupiditate beatae earum molestias non aliquid ut. Unde quibusdam laboriosam amet magni?</p>
 								<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illum suscipit facilis ex illo expedita veniam fugiat a natus animi est, neque temporibus totam reiciendis mollitia beatae reprehenderit ratione pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat harum officia, hic debitis libero, numquam sunt optio molestias quam doloribus doloremque officiis aut quod et ratione, inventore culpa architecto animi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui culpa cumque illum voluptate numquam consequatur accusantium soluta necessitatibus fuga tenetur architecto, porro, error ratione sequi nemo sunt ex, officiis neque.</p>
@@ -75,23 +41,29 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum suscipit beatae perferendis sapiente facere deserunt inventore quia doloribus, officia magnam reprehenderit veniam voluptas quisquam et incidunt dignissimos, magni architecto esse.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum suscipit beatae perferendis sapiente facere deserunt inventore quia doloribus, officia magnam reprehenderit veniam voluptas quisquam et incidunt dignissimos, magni architecto esse.</p>
 								
-								<div class="fade-to-white"></div>
-								<p class="continue"><a href="" class="continue__button">READ MORE</a></p>
+								<a href="" class="continue">READ MORE</a>
 							</artice>
 						</section>
 						<aside class="sidebar">
 							
 							
-							<img class="gray" src="img/badge.png" alt="">
+							<p class="sidebar-title--red">Hi, I'm Becca!</p>
+							<div class="bio">
+								<img src="http://www.dashoftexas.com/wp-content/themes/dashoftexas/img/becca.jpg" alt="">
+								<p class="bio__description">
+									I’m a 20-something wife, dog-mother, and Star Wars enthusiast. Here, you’ll find recipes that are inspired by our Texas upbringing and Austin kitchen. And maybe a few pictures of dogs, too.
+									
+									<a href="" class="bio__more">Read More</a>
+								</p>
+							</div>
 							
-							<p class="sidebar-title">Becca</p>
-							<img src="http://www.dashoftexas.com/wp-content/themes/dashoftexas/img/becca.jpg" alt="">
-							
-							<p class="sidebar-title">Instagram</p>
-<script src="http://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="http://snapwidget.com/in/?u=ZGFzaG9mdGV4YXN8aW58MjAwfDF8Nnx8bm98NXxmYWRlT3V0fG9uU3RhcnR8eWVzfHllcw==&ve=021215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+							<p class="sidebar-title--lightblue">Instagram</p>
+							<div class="instagram">
+								<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=ZGFzaG9mdGV4YXN8aW58MjAwfDF8Nnx8bm98MTB8ZmFkZU91dHxvblN0YXJ0fHllc3x5ZXM=&ve=021215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
 							</div>
 	
+							<img class="badge" src="img/badge.png" alt="">
 							
 						</aside>
 						
@@ -154,35 +126,6 @@
 				singleItem:true
 			});
 		});
-		
-		
-		
-		var lastScrollTop = 0;
-		
-		$(window).scroll(function(event){
-			
-		var st = $(this).scrollTop();
-		var position = 0;
-		
-		if (st > lastScrollTop){
-			// downscroll code
-			
-			parseInt($(".slider").css("top")) --; // add 150
-
-			$(".slider").css("top", posiiton);
-			
-		} else {
-			// upscroll code
-			
-			
-		}
-		
-		lastScrollTop = st;
-		
-		});
-		
-		
-		
 		
 	</script>
 

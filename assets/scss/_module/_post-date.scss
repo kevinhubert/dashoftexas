@@ -1,9 +1,10 @@
 .post-date {
-	color: $medium-gray;
-	font-weight: 100;
+	color: $medium-gray !important;
+	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
+	letter-spacing: 8px;
 	border-bottom: 2px $red dashed;
-	padding-bottom: 15px;
+	@include padding(10px null 10px null);
 	margin-bottom: 20px;
 }

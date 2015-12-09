@@ -1,8 +1,17 @@
+/*
+Theme Name: Dash of Texas
+Author: Kevin Hubert
+Author URI: https://kevinhubert.com/
+Description: Theme for food blogging site DashOfTexas.com
+Version: 2.0
+Text Domain: dashoftexas
+*/
+
 //--- DEV TOOLS --- //
 
 @import "_vendor/bourbon/bourbon",
 		"_vendor/neat/neat",
-		"_vendor/bitters/bitters";
+		"_vendor/bitters/bitters"; 
 
 
 // --- BASE --- //
@@ -12,6 +21,7 @@
 		"_base/owl-carousel";
 		
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,600,800,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,900italic);
 
 
 // --- LAYOUT --- //
@@ -48,7 +58,8 @@
 		"_module/icon",
 		"_module/callout",
 		"_module/grayscale",
-		"_module/bio";
+		"_module/bio",
+		"_module/badge";
 		
 
 // --- STATE --- //

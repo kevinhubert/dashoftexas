@@ -1,15 +1,17 @@
 .continue {
-	background-color: $white;
+	color: $red;
+	display: inline-block;
+	width: 50%;
 	padding: 10px;
 	text-align: center;
-	border: 1px solid $blueLight;	
-	bottom: 0;
-	&__button {
-		&:hover {
-			color: $yellow; 
-			border-color: $yellow;
-			display: block;
-			width: 100%;			
-		}
+	border: 2px dashed $red;
+	margin: 2em auto 1em auto;
+	a {color: $red;}
+	&:hover {
+		color: $white; 
+		background-color: $red;
+	}
+	@include media($tablet) {
+		width: 30%;
 	}
 }

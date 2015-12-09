@@ -1,10 +1,10 @@
 .sidebar-title {
 	color: $blueDark;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	border-bottom: 1px dashed $blueDark;
+	border-bottom: 2px dashed $blueDark;
 	margin-bottom: 5px;
 	margin-top: 1em;
 	&--gray {
@@ -16,5 +16,10 @@
 		@extend .sidebar-title;
 		color: $red;
 		border-color: $red;
+	}
+	&--lightblue {
+		@extend .sidebar-title;
+		color: $blueLight;
+		border-color: $blueLight;
 	}
 }
