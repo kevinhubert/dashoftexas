@@ -1,8 +1,5 @@
 .main-content {
 	position: absolute;
 	width: 100%;
-	@include media($tablet) {
-		top: 70vh;
-	}
 	background: $white;
 }

@@ -6,21 +6,27 @@
 
 <!-- REPLACE IN SCRIPT FILE BEFORE GO LIVE -->
 <script type="text/javascript">
-	$(function(){
+
+	jQuery(document).ready(function($) {
+		
+		var sliderHeight = $(".slider").height();
+		$(".slider").css("height", sliderHeight);
+		$(".main-content").css("top", sliderHeight);
+		
 		$(".menu").on("click" , function(){
 			$(".off-canvas").toggleClass("off-canvas--open");
 			$(".on-canvas").toggleClass("on-canvas--open");
 			$(this).toggleClass("menu--open");
 		});
-			
-	});
-	$(document).ready(function() {
+		
 		$(".owl-carousel").owlCarousel( {
 			navigation : false, // Show next and prev buttons
 			slideSpeed : 300,
 			paginationSpeed : 400,
-			singleItem:true
+			singleItem:true,
+			autoPlay: true
 		});
-	});		
+			
+	});
 </script>
 <?php wp_footer(); ?>

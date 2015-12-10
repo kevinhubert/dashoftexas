@@ -1,7 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<?php if ( is_home() ) : ?>
-	
 		<article class="post">
 	
 			<a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>

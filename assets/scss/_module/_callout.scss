@@ -5,15 +5,25 @@
 	text-align: center;
 	color: $white;
 	text-transform: uppercase;
-	font-size: rem(80px);
+	font-size: rem(60px);
+	@include media($tablet) {
+		font-size: rem(80px);
+	}
+	a {
+		color: $white;
+		text-shadow: 1px 1px 15px black;
+		&:hover {text-shadow: 0px 0px 0px black;}
+	}
 	&__title {
 		margin-bottom: 0;
 		font-weight: 900;
-		text-shadow: 1px 1px 15px black;
 		line-height: 75px;
+		&--shadow {text-shadow:1px 1px 15px black;}
 		&--small {
 			font-weight: 300;
-			font-size: rem(64px);
+			@include media($tablet) {
+				font-size: rem(64px);
+			}
 		}
 	}
 }
