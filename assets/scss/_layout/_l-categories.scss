@@ -1,0 +1,22 @@
+.categories {
+	li {
+		@include span-columns(12);
+		@include omega();
+		@include media($tablet) {
+			@include span-columns(4);
+			@include omega(3n);
+			
+		}
+	}
+	.block {
+		height: 250px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

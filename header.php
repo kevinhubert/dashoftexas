@@ -17,7 +17,7 @@
 	<header class="l-header">
 		<div class="container">
 			<div class="title">
-				<a href="<?php site_url(); ?>">
+				<a href="<?php bloginfo('url'); ?>">
 					<h1 class="title__text">A DASH OF <span class="title__text--strong">TEXAS</span></h1>
 				</a>
 				<h2 class="title__text title__text--tagline"><?php echo get_bloginfo ( 'description' );  ?></h2>	

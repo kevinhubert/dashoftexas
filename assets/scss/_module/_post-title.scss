@@ -4,6 +4,7 @@
 	color: $red;
 	font-size: 1.8rem;
 	font-weight: 900;
+	margin: 0; 
 	@include transition-duration(.5s);	
 	&:hover {
 		color: $yellow;

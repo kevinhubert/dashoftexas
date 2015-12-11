@@ -25,6 +25,9 @@ p {
 a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
+  color: $red;
+  font-weight: 500;
+  &:hover {color: $yellow;}
 
   &:active,
   &:focus,

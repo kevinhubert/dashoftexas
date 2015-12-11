@@ -4,7 +4,5 @@
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 8px;
-	border-bottom: 2px $red dashed;
-	@include padding(10px null 10px null);
-	margin-bottom: 20px;
+	margin: 0;
 }

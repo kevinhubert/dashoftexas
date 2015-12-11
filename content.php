@@ -2,24 +2,33 @@
 
 	<?php if ( is_home() ) : ?>
 		<article class="post">
-	
-			<a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
-			<p class="post-date"><?php the_time( 'F jS, Y') ?></p>
+			<div class="post__header">
+				<a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
+				<p class="post-date"><?php the_time( 'F jS, Y') ?></p>
+			</div>
 			
 			<?php the_content(); ?>
+
+			<p class="categories">
+				<?php the_category( ' , ' ); ?>
+			</p>
 	
 		</article>
 	
 	<?php else : ?>
-	
 
 		<article class="post">
-	
-			<h1 class="post-title"><?php the_title(); ?></h1>
-			<p class="post-date"><?php the_time( 'F jS, Y') ?></p>
+			<div class="post__header">
+				<h1 class="post-title"><?php the_title(); ?></h1>
+				<p class="post-date"><?php the_time( 'F jS, Y') ?></p>
+			</div>
 			
 			<?php the_content(); ?>
-	
+
+			<p class="categories">
+				<?php the_category( ' , ' ); ?>
+			</p>
+			
 		</article>
 
 	<?php endif; ?>

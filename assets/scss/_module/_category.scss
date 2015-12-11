@@ -1,0 +1,26 @@
+.category {
+	&__postlink {
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		min-height: 48px;
+		line-height: 18px;
+		border-top: 1px dashed $red;
+		border-bottom: 1px dashed $red;
+		margin-bottom: 5px;
+		padding: 5px 0;
+	}
+	.categories {
+		color: $medium-gray;
+		font-size: rem(14px);
+		border-bottom: 1px solid $light-gray;
+		border-top: 1px solid $light-gray;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		a {
+			color: $medium-gray;
+			font-style: normal;
+			font-weight: 400; 
+		}
+	}
+}

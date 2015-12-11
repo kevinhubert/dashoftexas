@@ -1,17 +1,19 @@
 .continue {
-	color: $red;
-	display: inline-block;
-	width: 50%;
-	padding: 10px;
 	text-align: center;
-	border: 2px dashed $red;
-	margin: 2em auto 1em auto;
-	a {color: $red;}
-	&:hover {
-		color: $white; 
-		background-color: $red;
-	}
-	@include media($tablet) {
-		width: 30%;
+	&__link {
+		color: $white;
+		display: inline-block;
+		padding: 10px 3em;
+		text-align: center; 
+		margin: 1em auto .2em auto;
+		background: $red;
+		border: 2px solid $red;
+		text-transform: uppercase;
+		@include transition(all .3s);
+		a {color: $red;}
+		&:hover {
+			color: $red; 
+			background: $white;
+		}
 	}
 }

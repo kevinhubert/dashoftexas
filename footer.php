@@ -19,12 +19,15 @@
 			$(this).toggleClass("menu--open");
 		});
 		
+		$(".post__header").first().css("border-top", 0);
+		
 		$(".owl-carousel").owlCarousel( {
 			navigation : false, // Show next and prev buttons
 			slideSpeed : 300,
 			paginationSpeed : 400,
 			singleItem:true,
-			autoPlay: true
+			autoPlay: true,
+			rewindNav: true
 		});
 			
 	});
