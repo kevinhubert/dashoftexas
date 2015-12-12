@@ -6,8 +6,7 @@ Description: Theme for food blogging site DashOfTexas.com
 Version: 2.0
 Text Domain: dashoftexas
 */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,600,800,300italic,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic,300,700italic,900,900italic);
 html {
   box-sizing: border-box; }
 
@@ -1089,7 +1088,7 @@ img {
   .mainnav a {
     display: inline-block;
     color: #fff;
-    padding: 20px 0;
+    padding: 8px 0;
     letter-spacing: 3px; }
 
 .icon {
@@ -1164,11 +1163,11 @@ img {
 
 .categories {
   text-align: center;
-  color: #F54B1A;
+  color: #999;
   margin: 0 0 4em 0;
   padding: 5px 0 15px 0; }
   .categories a {
-    color: #F54B1A;
+    color: #999;
     font-style: italic; }
     .categories a:hover {
       color: #E49B3D; }
@@ -1225,3 +1224,8 @@ img {
     color: #999;
     font-style: normal;
     font-weight: 400; }
+
+.pagination {
+  text-align: center; }
+  .pagination a:hover {
+    color: #E49B3D; }

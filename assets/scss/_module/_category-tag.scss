@@ -1,11 +1,11 @@
 .categories {
 	text-align: center;
-	color: $red;
+	color: $medium-gray; 
 	margin: 0 0 4em 0;
 	padding: 5px 0 15px 0;
 	
 	a {
-		color: $red;
+		color: $medium-gray;
 		font-style: italic;
 		&:hover {color: $yellow;}
 	}

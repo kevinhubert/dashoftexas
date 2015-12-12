@@ -18,9 +18,11 @@
 						
 						<?php if ( have_posts() ) : ?>
 							<?php
-								get_template_part( 'content' );
-							endif;
-							?>
+								get_template_part( 'content' ); ?>
+								
+								<p class="pagination"><?php posts_nav_link(); ?></p>
+								
+							<?php endif; ?>
 								
 					</section>
 					
