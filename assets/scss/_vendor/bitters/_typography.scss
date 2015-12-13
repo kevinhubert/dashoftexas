@@ -17,6 +17,17 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
+h1 {
+  font-size: 2em;
+} 
+h2 {
+  font-size: 1.5em;
+  color: $blueDark;
+}
+h3 {
+  font-size: 1.2em;
+  color: $red;
+}
 
 p {
   margin: 0 0 $small-spacing;

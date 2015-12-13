@@ -17,10 +17,6 @@
 		border-top: 1px solid $light-gray;
 		padding-bottom: 5px;
 		margin-top: 10px;
-		a {
-			color: $medium-gray;
-			font-style: normal;
-			font-weight: 400; 
-		}
 	}
+	&__postlink {color: $red;}	
 }

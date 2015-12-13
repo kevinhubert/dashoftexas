@@ -184,6 +184,17 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em;
+  color: #1B346C; }
+
+h3 {
+  font-size: 1.2em;
+  color: #F54B1A; }
+
 p {
   margin: 0 0 0.75em; }
 
@@ -1166,10 +1177,10 @@ img {
   color: #999;
   margin: 0 0 4em 0;
   padding: 5px 0 15px 0; }
-  .categories a {
+  .categories__tag a {
     color: #999;
     font-style: italic; }
-    .categories a:hover {
+    .categories__tag a:hover {
       color: #E49B3D; }
 
 .page-title {
@@ -1220,10 +1231,9 @@ img {
   border-top: 1px solid #ddd;
   padding-bottom: 5px;
   margin-top: 10px; }
-  .category .categories a {
-    color: #999;
-    font-style: normal;
-    font-weight: 400; }
+
+.category__postlink {
+  color: #F54B1A; }
 
 .pagination {
   text-align: center; }

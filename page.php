@@ -10,26 +10,14 @@
 				<div class="container">
 					<section class="content">		
 						
-						<h1 class="page-title"><?php single_cat_title(); ?></h1>			
+						<h1 class="page-title"><?php the_title(); ?></h1>			
 						
-						<ul class="categories">
-
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							
-								<li class="category">
-									<a class="category__postlink" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-									<div class="block" style="background-image: url(<?php the_field('category_page_image'); ?>);">
-										<a href="<?php the_permalink() ?>"></a>
-									</div>
-									<p class="categories categories__tag">
-									<?php the_category( ', ' ); ?>
-									</p>
-								</li>
+								<?php the_content(); ?>
 								
 							<?php endwhile; ?>
-						
-						</ul>
-						
+												
 						<?php endif; ?>
 								
 					</section>

@@ -3,10 +3,9 @@
 	color: $medium-gray; 
 	margin: 0 0 4em 0;
 	padding: 5px 0 15px 0;
-	
-	a {
+	&__tag a {
 		color: $medium-gray;
 		font-style: italic;
-		&:hover {color: $yellow;}
+		&:hover {color:$yellow;}
 	}
 }
