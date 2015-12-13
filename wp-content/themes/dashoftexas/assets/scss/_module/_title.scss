@@ -1,0 +1,45 @@
+.title {	
+	@include display(flex);
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include align-items(center);
+	margin: 0 auto;
+	height: 65px;
+	color: $dark-gray;	
+	border-bottom: 1px solid $light-gray;
+	background: url(img/dashoftexas.png) center left no-repeat;
+	background-size: 50px;
+	padding-left: 65px;
+	a {
+		color: $blueDark;
+	}
+	&__text {
+		font-weight: 300;
+		margin: 0px;
+		font-size: 1.5em;
+		@include media($tablet) {
+				font-size: 1.8em;
+			}
+		@include media($desktop) {
+				font-size: 2em;
+			}
+		&--strong {
+			color: $blueDark;
+			font-weight: 900;
+		}
+		&--tagline {
+			display: none; 	
+			margin-left: auto;
+			padding-right: 1em;
+			@include media($tablet) {
+				@include display(flex);
+				@include flex-shrink(0);
+				color: $red;
+				font-size: rem(22);
+			}
+		}
+	}
+	@include media($tablet) {
+
+	}
+}

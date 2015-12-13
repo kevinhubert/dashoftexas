@@ -1,0 +1,40 @@
+.off-canvas {
+	position: fixed;
+	padding: 75px 10px;
+	height: 100%;
+	width: 100%;
+	@include media($tablet) {
+		width: 320px;
+	}
+	top: 0;
+	right: -100%;
+	background: $red;
+	color: $white;
+	@include transition-property(right);
+	@include transition-duration(.8s);
+	@include transition-timing-function(cubic-bezier(0.88, 0.38, 0.57, 1.26));
+	@include transition-delay(0s);
+	&--open {
+		right: 0;
+		@include transition-property(right);
+		@include transition-duration(.8s);
+		@include transition-timing-function(cubic-bezier(0.88, 0.38, 0.57, 1.26));
+		@include transition-delay(0s);
+	}
+	.footer {
+		position: absolute;
+		width: 85%;
+		padding: 50px 0;
+		border-top: 1px solid $white;
+		@include display(flex);
+		@include justify-content(space-around);
+		bottom: 0;
+		left: 50%;
+		@include transform(translateX(-50%));
+		.icon {
+			$icon-size: 40px;
+			height: $icon-size;
+			width: $icon-size;
+		}
+	}
+}

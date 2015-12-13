@@ -1,0 +1,9 @@
+.main-footer {
+	@include span-columns(12);
+	min-height: 200px;
+	border-top: 1px solid $light-gray;
+	margin-top: 5em;
+	padding-top: 2em;
+	text-align: center;
+	color: $medium-gray;
+}

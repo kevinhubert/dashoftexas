@@ -1,0 +1,19 @@
+.continue {
+	text-align: center;
+	&__link {
+		color: $white;
+		display: inline-block;
+		padding: 10px 3em;
+		text-align: center; 
+		margin: 1em auto .2em auto;
+		background: $red;
+		border: 2px solid $red;
+		text-transform: uppercase;
+		@include transition(all .3s);
+		a {color: $red;}
+		&:hover {
+			color: $red; 
+			background: $white;
+		}
+	}
+}

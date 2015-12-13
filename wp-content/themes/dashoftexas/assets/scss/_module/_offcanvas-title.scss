@@ -1,0 +1,12 @@
+.offcanvas-title {
+	display: none;
+	@include media($tablet) {
+		display: block;
+	}
+	strong {font-weight: 900;}
+	font-size: 2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 2px dashed $white; 
+}

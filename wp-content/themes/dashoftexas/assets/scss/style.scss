@@ -1,0 +1,74 @@
+/*
+Theme Name: Dash of Texas
+Author: Kevin Hubert
+Author URI: https://kevinhubert.com/
+Description: Theme for food blogging site DashOfTexas.com
+Version: 2.0
+Text Domain: dashoftexas
+*/
+
+//--- DEV TOOLS --- //
+
+@import "_vendor/bourbon/bourbon",
+		"_vendor/neat/neat",
+		"_vendor/bitters/bitters"; 
+
+
+// --- BASE --- //
+
+@import "_base/normalize",
+		"_base/mixins",
+		"_base/owl-carousel";
+		
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300italic,300,700italic,900,900italic);
+
+
+// --- LAYOUT --- //
+
+@import "_layout/l-body",
+		"_layout/l-container",
+		"_layout/l-wrapper", 
+		"_layout/l-img",
+		"_layout/l-header",
+		"_layout/l-main-content",
+		"_layout/l-footer", 
+		"_layout/l-offcanvas",
+		"_layout/l-oncanvas",
+		"_layout/l-slider",
+		"_layout/l-content",
+		"_layout/l-sidebar",
+		"_layout/l-post",
+		"_layout/l-instagram",
+		"_layout/l-categories",
+		"_layout/l-comments";
+
+
+// --- MODULES --- //
+
+@import "_module/title",
+		"_module/logo",
+		"_module/menu-toggle",
+		"_module/post-title",
+		"_module/post-date",
+		"_module/sidebar-title",
+		"_module/filters",
+		"_module/offcanvas-title",
+		"_module/continue",
+		"_module/fade-to-white",
+		"_module/mainnav",
+		"_module/icon",
+		"_module/callout",
+		"_module/grayscale",
+		"_module/bio",
+		"_module/badge",
+		"_module/category-tag",
+		"_module/page-title",
+		"_module/category",
+		"_module/pagination";
+		
+
+// --- STATE --- //
+
+@import "_state/animations"
+		
