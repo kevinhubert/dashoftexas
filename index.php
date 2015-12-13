@@ -1,55 +1,17 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-	<!-- BEGIN ON CANVAS CONTAINER -->
-	<div class="wrapper">
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-		<!-- BEGIN ON CANVAS CONTAINER -->
-		<div class="on-canvas">      
-
-			<!-- BEGIN SLIDER  -->
-			<section class="slider owl-carousel">
-				<?php include (TEMPLATEPATH . '/slider.php'); ?>
-			</section>
-			<!-- END SLIDER -->
-			
-			<div class="main-content">
-				<div class="container">
-					<section class="content">
-						
-						<?php if ( have_posts() ) : ?>
-							<?php
-								get_template_part( 'content' ); ?>
-								
-								<p class="pagination"><?php posts_nav_link(); ?></p>
-								
-							<?php endif; ?>
-								
-					</section>
-					
-					<!-- BEGIN MAIN SIDEBAR -->
-					<aside class="sidebar">
-						<?php get_sidebar(); ?>
-					</aside>
-					<!-- END MAIN SIDEBAR -->
-					
-					<!-- BEGIN MAIN FOOTER -->
-					<footer class="main-footer">
-						<?php get_footer(); ?>
-					</footer>
-					<!-- END MAIN FOOTER -->
-					
-				</div>
-			</div>
-		</div>
-		<!-- END ON CANVAS CONTAINER-->
-		
-		<!-- BEING OFF CANVAS NAVIGATION -->
-		<aside class="off-canvas">
-			<?php include (TEMPLATEPATH . '/offcanvas.php'); ?>
-		</aside>
-		<!-- END OFF CANVAS NAVIGATION -->
-		
-	</div>
-	<!-- END WRAPPER -->
-</body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );

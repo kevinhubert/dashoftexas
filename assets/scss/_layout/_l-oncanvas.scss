@@ -1,9 +1,0 @@
-.on-canvas {
-	position: relative;
-	left: 0;
-	@include transition-property(all);
-	@include transition-duration(.5s);
-	&--open {
-		left: -300px;
-	}
-}
