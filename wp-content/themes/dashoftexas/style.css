@@ -767,7 +767,10 @@ img {
     transform: translateX(-50%); }
     .off-canvas .footer .icon {
       height: 40px;
-      width: 40px; }
+      width: 40px;
+      color: #fff; }
+      .off-canvas .footer .icon:hover {
+        color: #ddd; }
 
 .on-canvas {
   position: relative;

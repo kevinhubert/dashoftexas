@@ -35,6 +35,8 @@
 			$icon-size: 40px;
 			height: $icon-size;
 			width: $icon-size;
+			color: $white;
+			&:hover {color: $light-gray;}				
 		}
 	}
 }
