@@ -38,12 +38,11 @@ a {
   transition: color $base-duration $base-timing;
   color: $red;
   font-weight: 500;
-  &:hover {color: $yellow;}
-
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: $yellow;
+    outline: none;
   }
 }
 

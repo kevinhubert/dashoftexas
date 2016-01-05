@@ -9,5 +9,9 @@
 		border-bottom: 2px $red dashed; 
 		padding: 1.2em 0 1em;
 		margin-bottom: 1em;
+		&:hover {
+			border-top:2px $yellow dashed;
+			border-bottom: 2px $yellow dashed; 
+		}
 	}
 }
