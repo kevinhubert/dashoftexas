@@ -1,7 +1,7 @@
 .bio {
-	background: $red;
+	background: colors(orange);;
 	text-align: center;
-	color: $white;
+    color: colors(white);
 	font-size: rem(16);
 	padding: 10px;
 	&__description {
@@ -9,7 +9,7 @@
 	}
 	&__more {
 		display: block;
-		color: $white;
+        color: colors(white);
 		font-weight: bold;
 		font-style: italic;
 		font-size: 1.2em;

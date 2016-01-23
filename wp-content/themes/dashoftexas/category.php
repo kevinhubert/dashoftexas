@@ -30,6 +30,8 @@
 						
 						</ul>
 						
+                        <p class="pagination"><?php posts_nav_link(); ?></p>
+                        
 						<?php endif; ?>
 								
 					</section>

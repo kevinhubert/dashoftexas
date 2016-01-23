@@ -17,7 +17,7 @@ label {
   font-weight: 600;
   margin-bottom: $small-spacing / 2;
 
-  &.required::after {
+  &.requiorange::after {
     content: "*";
   }
 
@@ -63,14 +63,14 @@ textarea {
 }
 
 input[type="search"] {
-  appearance: none;
-  background: transparent;
-  color: $white;
-  border-color: $white!important;
-  box-sizing: border-box !important;
-  margin-bottom: 0px;
-  @include placeholder {
-    color: $white;
+    appearance: none;
+    background: transparent;
+    color: colors(white);
+    border-color: colors(white)!important;
+    box-sizing: border-box !important;
+    margin-bottom: 0px;
+    @include placeholder {
+    color: colors(white);
     font-weight: 100;
   }
 }

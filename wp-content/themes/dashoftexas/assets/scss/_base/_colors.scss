@@ -1,0 +1,21 @@
+/* --- Function to return Color value --- */
+@function colors($color) {
+    @return map-get($colors, $color);
+}
+
+/* --- Mixin to define background-color --- */
+@mixin background-color($color) {
+    background-color: colors($color);
+}
+
+/* --- Primary Color Palette ---*/
+$colors: (
+    white: #ffffff,
+    orange: #F54B1A,
+    blueLight: #008cba,
+    blueDark: #1B346C,
+    yellow: #E49B3D,
+    grayDark: #606060,
+    grayMedium: #999,
+    grayLight: #dddddd,
+);

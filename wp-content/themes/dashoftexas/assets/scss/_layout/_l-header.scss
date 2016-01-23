@@ -6,6 +6,6 @@
 	z-index: 100;
 	background: rgba(255, 255, 255, .9);
 	@include media($tablet) {
-		background: $white;
+		@include background-color(white);
 	}
 }

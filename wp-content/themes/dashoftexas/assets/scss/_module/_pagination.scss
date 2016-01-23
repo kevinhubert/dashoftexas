@@ -1,6 +1,6 @@
 .pagination {
 	text-align: center;
 	a {
-		&:hover {color: $yellow;}
+		&:hover {color: colors(yellow);;}
 	}
 }

@@ -5,19 +5,19 @@
 		@include justify-content(center);
 		min-height: 48px;
 		line-height: 18px;
-		border-top: 1px dashed $red;
-		border-bottom: 1px dashed $red;
+		border-top: 1px dashed colors(orange);;
+		border-bottom: 1px dashed colors(orange);;
 		margin-bottom: 5px;
 		padding: 5px 0;
-		color: $red !important;
+		color: colors(orange); !important;
 		font-style: normal !important;
-		&:hover {color: $yellow !important;} 
+		&:hover {color: colors(yellow); !important;} 
 	}
 	.categories {
-		color: $medium-gray;
+		color: colors(grayMedium);;
 		font-size: rem(14px);
-		border-bottom: 1px solid $light-gray;
-		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid colors(grayLight);;
+		border-top: 1px solid colors(grayLight);;
 		padding-bottom: 5px;
 		margin-top: 10px;
 	}

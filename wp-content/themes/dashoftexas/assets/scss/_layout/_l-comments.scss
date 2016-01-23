@@ -1,7 +1,7 @@
 #comments {
-	a:hover {color:$yellow;}
+	a:hover {color:colors(yellow);;}
 	.comment-author {
-		color: $red;
+		color: colors(orange);;
 		text-transform: uppercase;
 		font-size: rem(14);
 		font-weight: 400;
@@ -24,7 +24,7 @@
 		margin-bottom: 15px;
 	}
 	label {
-		color: $red;
+		color: colors(orange);;
 		font-size: rem(16px);
 	}
 }

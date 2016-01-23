@@ -5,13 +5,13 @@
 	@include align-items(center);
 	margin: 0 auto;
 	height: 65px;
-	color: $dark-gray;	
-	border-bottom: 1px solid $light-gray;
+	color: colors(grayDark);;	
+	border-bottom: 1px solid colors(grayLight);;
 	background: url(img/dashoftexas.png) center left no-repeat;
 	background-size: 50px;
 	padding-left: 65px;
 	a {
-		color: $blueDark;
+		color: colors(blueDark);;
 	}
 	&__text {
 		font-weight: 300;
@@ -24,7 +24,7 @@
 				font-size: 2em;
 			}
 		&--strong {
-			color: $blueDark;
+			color: colors(blueDark);;
 			font-weight: 900;
 		}
 		&--tagline {
@@ -34,7 +34,7 @@
 			@include media($tablet) {
 				@include display(flex);
 				@include flex-shrink(0);
-				color: $red;
+				color: colors(orange);;
 				font-size: rem(22);
 			}
 		}

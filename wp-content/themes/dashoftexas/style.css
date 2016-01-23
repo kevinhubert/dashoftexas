@@ -19,7 +19,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #008cba;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: colors(white);
   cursor: pointer;
   display: inline-block;
   font-family: "Lato";
@@ -35,7 +35,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #007095;
-    color: #fff; }
+    color: colors(white); }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
@@ -96,21 +96,21 @@ textarea {
 input[type="search"] {
   appearance: none;
   background: transparent;
-  color: #fff;
-  border-color: #fff !important;
+  color: colors(white);
+  border-color: colors(white) !important;
   box-sizing: border-box !important;
   margin-bottom: 0px; }
   input[type="search"]::-webkit-input-placeholder {
-    color: #fff;
+    color: colors(white);
     font-weight: 100; }
   input[type="search"]::-moz-placeholder {
-    color: #fff;
+    color: colors(white);
     font-weight: 100; }
   input[type="search"]:-moz-placeholder {
-    color: #fff;
+    color: colors(white);
     font-weight: 100; }
   input[type="search"]:-ms-input-placeholder {
-    color: #fff;
+    color: colors(white);
     font-weight: 100; }
 
 input[type="checkbox"],
@@ -580,6 +580,10 @@ td,
 th {
   padding: 0; }
 
+/*Primary Color Palette */
+/* --- Function to return Color value --- */
+/* --- Mixin to define background-color --- */
+/* --- Primary Color Palette ---*/
 * {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -678,12 +682,12 @@ img {
   background: rgba(255, 255, 255, 0.9); }
   @media screen and (min-width: 600px) {
     .l-header {
-      background: #fff; } }
+      background-color: #ffffff; } }
 
 .main-content {
   position: absolute;
   width: 100%;
-  background: #fff; }
+  background-color: #ffffff; }
   .main-content--categories {
     padding-top: 65px; }
 
@@ -709,7 +713,7 @@ img {
   top: 0;
   right: -100%;
   background: #F54B1A;
-  color: #fff;
+  color: #ffffff;
   -webkit-transition-property: right;
   -moz-transition-property: right;
   transition-property: right;
@@ -743,7 +747,7 @@ img {
     position: absolute;
     width: 85%;
     padding: 50px 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -770,7 +774,7 @@ img {
     .off-canvas .footer .icon {
       height: 40px;
       width: 40px;
-      color: #fff; }
+      color: #ffffff; }
       .off-canvas .footer .icon:hover {
         color: #ddd; }
 
@@ -1129,7 +1133,7 @@ img {
 .continue {
   text-align: center; }
   .continue__link {
-    color: #fff;
+    color: #ffffff;
     display: inline-block;
     padding: 10px 3em;
     text-align: center;
@@ -1144,7 +1148,7 @@ img {
       color: #F54B1A; }
     .continue__link:hover {
       color: #F54B1A;
-      background: #fff; }
+      background-color: #ffffff; }
 
 .mainnav {
   font-size: 1.5em;
@@ -1153,7 +1157,7 @@ img {
   text-transform: uppercase; }
   .mainnav a {
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     padding: 8px 0;
     letter-spacing: 3px; }
 
@@ -1175,14 +1179,14 @@ img {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 3.75rem; }
   @media screen and (min-width: 600px) {
     .callout {
       font-size: 5rem; } }
   .callout a {
-    color: #fff;
+    color: #ffffff;
     text-shadow: 1px 1px 15px black; }
     .callout a:hover {
       text-shadow: 0px 0px 0px black; }
@@ -1205,14 +1209,14 @@ img {
 .bio {
   background: #F54B1A;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   font-size: 1rem;
   padding: 10px; }
   .bio__description {
     margin: 0; }
   .bio__more {
     display: block;
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
     font-style: italic;
     font-size: 1.2em;

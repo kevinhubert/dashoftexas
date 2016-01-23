@@ -1,25 +1,25 @@
 .sidebar-title {
-	color: $blueDark;
+	color: colors(blueDark);;
 	font-weight: 300;
 	text-align: center;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	border-bottom: 2px dashed $blueDark;
+	border-bottom: 2px dashed colors(blueDark);;
 	margin-bottom: 5px;
 	margin-top: 1em;
 	&--gray {
 		@extend .sidebar-title;
-		color: $dark-gray;
-		border-color: $dark-gray;
+		color: colors(grayDark);;
+		border-color: colors(grayDark);;
 	}
-	&--red {
+	&--orange {
 		@extend .sidebar-title;
-		color: $red;
-		border-color: $red;
+		color: colors(orange);;
+		border-color: colors(orange);;
 	}
 	&--lightblue {
 		@extend .sidebar-title;
-		color: $blueLight;
-		border-color: $blueLight;
+		color: colors(blueLight);;
+		border-color: colors(blueLight);;
 	}
 }

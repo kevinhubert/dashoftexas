@@ -2,16 +2,16 @@
 	position: relative;
 	line-height: 2rem;
 	font-weight: 300;
-	color: $dark-gray;
+	color: colors(grayDark);;
 	font-size: 1.125em;
 	&__header {
-		border-top:2px $red dashed;
-		border-bottom: 2px $red dashed; 
+		border-top:2px colors(orange); dashed;
+		border-bottom: 2px colors(orange); dashed; 
 		padding: 1.2em 0 1em;
 		margin-bottom: 1em;
 		&:hover {
-			border-top:2px $yellow dashed;
-			border-bottom: 2px $yellow dashed; 
+			border-top:2px colors(yellow); dashed;
+			border-bottom: 2px colors(yellow); dashed; 
 		}
 	}
 }
