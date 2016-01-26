@@ -1,13 +1,13 @@
 .post-title {
 	display: block;
 	text-align: center;
-	color: colors(orange);;
+	color: $red;
 	font-size: 1.8rem;
 	font-weight: 900;
 	margin: 0; 
 	@include transition-duration(.5s);	
 	&:hover {
-		color: colors(yellow);;
+		color: $yellow;
 	}
 	@include media($tablet) {
 		font-size: 2rem;

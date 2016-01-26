@@ -1,16 +1,16 @@
 .categories {
 	text-align: center;
-	color: colors(grayMedium);; 
+	color: $medium-gray; 
 	margin: 0 0 4em 0;
 	padding: 5px 0 15px 0;
 	&__tag {
-		color: colors(grayMedium);;
+		color: $medium-gray;
 		font-style: italic;
-		&:hover {color:colors(yellow);;}
+		&:hover {color:$yellow;}
 	}
 	a {
-		color: colors(grayMedium);;
+		color: $medium-gray;
 		font-style: italic;
-		&:hover {color:colors(yellow);;}
+		&:hover {color:$yellow;}
 	}
 }

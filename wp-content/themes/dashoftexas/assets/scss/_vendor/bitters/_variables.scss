@@ -18,13 +18,21 @@ $base-z-index: 0;
 /*Primary Color Palette */
 $white: #fff;
 $offWhite:#efefef;
+$red: #F54B1A;
+$blueLight: #008cba;
+$blueDark: #1B346C;
+$yellow: #E49B3D;
+
+$dark-gray: #606060;
+$medium-gray: #999;
+$light-gray: #ddd; 
 
 // Font Colors
-$base-font-color: colors(grayDark);;
-$action-color: colors(blueLight);;
+$base-font-color: $dark-gray;
+$action-color: $blueLight;
 
 // Border
-$base-border-color: colors(grayLight);;
+$base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

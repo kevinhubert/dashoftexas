@@ -1,19 +1,19 @@
 .continue {
 	text-align: center;
 	&__link {
-        color: colors(white);
+		color: $white;
 		display: inline-block;
 		padding: 10px 3em;
 		text-align: center; 
 		margin: 1em auto .2em auto;
-		background: colors(orange);;
-		border: 2px solid colors(orange);;
+		background: $red;
+		border: 2px solid $red;
 		text-transform: uppercase;
 		@include transition(all .3s);
-		a {color: colors(orange);;}
+		a {color: $red;}
 		&:hover {
-			color: colors(orange);; 
-			@include background-color(white);
+			color: $red; 
+			background: $white;
 		}
 	}
 }

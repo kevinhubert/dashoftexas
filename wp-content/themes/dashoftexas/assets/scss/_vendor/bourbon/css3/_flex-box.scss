@@ -193,7 +193,7 @@
 // 2012 - flex-basis (number)
 @mixin flex-basis($width: auto) {
   @include prefixer(flex-basis, $width, webkit moz spec);
-  -ms-flex-preferorange-size: $width;
+  -ms-flex-preferred-size: $width;
 }
 
 // 2009 - box-pack (start | end | center | justify)

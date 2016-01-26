@@ -22,11 +22,11 @@ h1 {
 } 
 h2 {
   font-size: 1.5em;
-  color: colors(blueDark);;
+  color: $blueDark;
 }
 h3 {
   font-size: 1.2em;
-  color: colors(orange);;
+  color: $red;
 }
 
 p {
@@ -36,12 +36,12 @@ p {
 a {
   text-decoration: none;
   transition: color $base-duration $base-timing;
-  color: colors(orange);;
+  color: $red;
   font-weight: 500;
   &:active,
   &:focus,
   &:hover {
-    color: colors(yellow);;
+    color: $yellow;
     outline: none;
   }
 }

@@ -9,7 +9,7 @@ $bar-height: 3px;
 		position: absolute;
 		width: 100%;		
 		height: $bar-height;
-		background-color: colors(orange);;
+		background-color: $red;
 		@include transition(all);
 		@include transition-duration(1s);
 		@include transition-timing-function(cubic-bezier(0.5,-0.8, 0.5, 1.8));

@@ -8,8 +8,8 @@
 	}
 	top: 0;
 	right: -100%;
-	background: colors(orange);;
-    color: colors(white);
+	background: $red;
+	color: $white;
 	@include transition-property(right);
 	@include transition-duration(.8s);
 	@include transition-timing-function(cubic-bezier(0.88, 0.38, 0.57, 1.26));
@@ -25,7 +25,7 @@
 		position: absolute;
 		width: 85%;
 		padding: 50px 0;
-		border-top: 1px solid colors(white);
+		border-top: 1px solid $white;
 		@include display(flex);
 		@include justify-content(space-around);
 		bottom: 0;
@@ -35,8 +35,8 @@
 			$icon-size: 40px;
 			height: $icon-size;
 			width: $icon-size;
-            color: colors(white);
-			&:hover {color: colors(grayLight);;}				
+			color: $white;
+			&:hover {color: $light-gray;}				
 		}
 	}
 }

@@ -1,6 +1,6 @@
 .main-content {
 	position: absolute;
 	width: 100%;
-	@include background-color(white);
+	background: $white;
 	&--categories {padding-top: 65px;}
 }
