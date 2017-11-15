@@ -8,10 +8,15 @@
 	</p>
 </div>
 
-<p class="sidebar-title--lightblue">Instagram</p>
-<div class="instagram">
-	<script src="http://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="http://snapwidget.com/in/?u=ZGFzaG9mdGV4YXN8aW58MjAwfDF8Nnx8bm98MTB8ZmFkZU91dHxvblN0YXJ0fHllc3x5ZXM=&ve=021215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
-</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2693491020856121"
+     data-ad-slot="3281473038"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img class="badge" src="<?php bloginfo('template_directory'); ?>/img/badge.png" alt="">
