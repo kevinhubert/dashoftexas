@@ -7,7 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<title><?php $blog_title = get_bloginfo(); ?></title>
-	<link rel="stylesheet" href="<?php site_url(); ?>/wp-content/themes/dashoftexas/style.css">
+	<link rel="stylesheet" href="<?php site_url(); ?>/dashoftexas/wp-content/themes/dashoftexas/style.css">
 	<?php include_once( "analyticstracking.php"); ?>
 	<?php wp_head(); ?>
 </head>

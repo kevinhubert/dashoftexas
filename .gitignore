@@ -12,6 +12,7 @@ wp-content/*
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
 !wp-content/themes/dashoftexas/
+!wp-content/themes/type/
 
 #Dev Dependencies
 wp-content/themes/dashoftexas/node_modules

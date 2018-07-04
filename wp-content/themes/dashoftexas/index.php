@@ -7,22 +7,21 @@
 		<div class="on-canvas">      
 
 			<!-- BEGIN SLIDER  -->
-			<section class="slider owl-carousel">
-				<?php include (TEMPLATEPATH . '/slider.php'); ?>
-			</section>
+			<!-- <section class="slider owl-carousel">
+			</section> -->
 			<!-- END SLIDER -->
 			
 			<div class="main-content">
 				<div class="container">
 					<section class="content">
 						
-						<?php if ( have_posts() ) : ?>
+						<!-- <?php if ( have_posts() ) : ?>
 							<?php
 								get_template_part( 'content' ); ?>
 								
 								<p class="pagination"><?php posts_nav_link(); ?></p>
 								
-							<?php endif; ?>
+							<?php endif; ?> -->
 								
 					</section>
 					
@@ -44,9 +43,9 @@
 		<!-- END ON CANVAS CONTAINER-->
 		
 		<!-- BEING OFF CANVAS NAVIGATION -->
-		<aside class="off-canvas">
+		<!-- <aside class="off-canvas">
 			<?php include (TEMPLATEPATH . '/offcanvas.php'); ?>
-		</aside>
+		</aside> -->
 		<!-- END OFF CANVAS NAVIGATION -->
 		
 	</div>

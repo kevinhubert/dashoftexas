@@ -8,6 +8,18 @@
 	</p>
 </div>
 
+<div class="theoffcut">
+	<div class="theoffcut__copy">
+		Handmade cutting boards, serving trays, wine displays, and more at
+	</div>
+	<div class="theoffcut__logo">
+	<img src="http://www.dashoftexas.com/wp-content/uploads/2018/04/offcut-logo.png" alt="">
+	</div>
+	<div class="theoffcut__cta">
+		<a href="//theoffcut.shop" target="_blank">Shop Now!</a>
+	</div>
+</div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Sidebar -->
 <ins class="adsbygoogle"
