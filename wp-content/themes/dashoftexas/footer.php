@@ -1,43 +1,81 @@
-<p>Copyright Dash of Texas</p>
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-template-parts
+ *
+ * @package Type
+ * @since Type 1.0
+ */
 
-<!-- SCRIPTS -->
-<script src="<?php site_url(); ?>/wp-content/themes/dashoftexas/js/owl.carousel.min.js"></script>
+?>
+			</div><!-- .inside -->
+		</div><!-- .container -->
+	</div><!-- #content -->
 
-<!-- Google Ads -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2693491020856121",
-    enable_page_level_ads: true
-  });
-</script>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) : ?>
+			<div class="widget-area" role="complementary">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-md-4" id="footer-area-1">
+							<?php if ( is_active_sidebar( 'footer-1' ) ) {
+								dynamic_sidebar( 'footer-1' );
+							} // end footer widget area 1 ?>
+						</div>	
+						<div class="col-4 col-md-4" id="footer-area-2">
+							<?php if ( is_active_sidebar( 'footer-2' ) ) {
+								dynamic_sidebar( 'footer-2' );
+							} // end footer widget area 2 ?>
+						</div>
+						<div class="col-4 col-md-4" id="footer-area-3">
+							<?php if ( is_active_sidebar( 'footer-3' ) ) {
+								dynamic_sidebar( 'footer-3' );
+							} // end footer widget area 3 ?>
+						</div>
+					</div>
+				</div><!-- .container -->
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+		
+		<?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
+			<div class="widget-area" role="complementary">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12" id="footer-area-4">
+							<?php if ( is_active_sidebar( 'footer-4' ) ) {
+								dynamic_sidebar( 'footer-4' );
+							} // end footer widget area 4 ?>
+						</div>	
+					</div>
+				</div><!-- .container -->
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+		
+		<div class="footer-copy">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-sm-12">
+						<div class="site-credits"><?php type_credits(); ?></div>
+					</div>
+					<div class="col-6 col-sm-12">
+						<div class="site-info">
+							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'type' ) ); ?>"><?php printf( __( 'Powered by %s', 'type' ), 'WordPress' ); ?></a>
+							<span class="sep"> / </span>
+							<a href="<?php echo esc_url( __( 'https://www.designlabthemes.com/', 'type' ) ); ?>" rel="nofollow"><?php printf( __( 'Theme by %s', 'type' ), 'Design Lab' ); ?></a>
+						</div><!-- .site-info -->
+					</div>
+				</div>
+			</div><!-- .container -->
+		</div><!-- .footer-copy -->
+		
+	</footer><!-- #colophon -->
+</div><!-- #page -->
 
-<!-- REPLACE IN SCRIPT FILE BEFORE GO LIVE -->
-<script type="text/javascript">
-
-	jQuery(document).ready(function($) {
-		
-		var sliderHeight = $(".slider").height();
-		$(".slider").css("height", sliderHeight);
-		$(".main-content").css("top", sliderHeight);
-		
-		$(".menu").on("click" , function(){
-			$(".off-canvas").toggleClass("off-canvas--open");
-			$(".on-canvas").toggleClass("on-canvas--open");
-			$(this).toggleClass("menu--open");
-		});
-		
-		$(".post__header").first().css("border-top", 0);
-		
-		$(".owl-carousel").owlCarousel( {
-			navigation : false, // Show next and prev buttons
-			slideSpeed : 300,
-			paginationSpeed : 400,
-			singleItem:true,
-			autoPlay: true,
-			rewindNav: true
-		});
-			
-	});
-</script>
 <?php wp_footer(); ?>
+
+</body>
+</html>

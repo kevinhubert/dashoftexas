@@ -1,54 +1,56 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Type
+ * @since Type 1.0
+ */
 
-	<!-- BEGIN ON CANVAS CONTAINER -->
-	<div class="wrapper">
-
-		<!-- BEGIN ON CANVAS CONTAINER -->
-		<div class="on-canvas">      
-
-			<!-- BEGIN SLIDER  -->
-			<!-- <section class="slider owl-carousel">
-			</section> -->
-			<!-- END SLIDER -->
-			
-			<div class="main-content">
-				<div class="container">
-					<section class="content">
-						
-						<!-- <?php if ( have_posts() ) : ?>
-							<?php
-								get_template_part( 'content' ); ?>
-								
-								<p class="pagination"><?php posts_nav_link(); ?></p>
-								
-							<?php endif; ?> -->
-								
-					</section>
-					
-					<!-- BEGIN MAIN SIDEBAR -->
-					<aside class="sidebar">
-						<?php get_sidebar(); ?>
-					</aside>
-					<!-- END MAIN SIDEBAR -->
-					
-					<!-- BEGIN MAIN FOOTER -->
-					<footer class="main-footer">
-						<?php get_footer(); ?>
-					</footer>
-					<!-- END MAIN FOOTER -->
-					
-				</div>
-			</div>
-		</div>
-		<!-- END ON CANVAS CONTAINER-->
+get_header(); ?>
+	
+	<?php
+	/* Blog Options */
+	$blog_layout = get_theme_mod('blog_layout', 'list');
+	$blog_sidebar_position = get_theme_mod('blog_sidebar_position', 'content-sidebar');
+	$post_template = type_blog_template();
+	$post_column = type_blog_column();
+	?>
 		
-		<!-- BEING OFF CANVAS NAVIGATION -->
-		<!-- <aside class="off-canvas">
-			<?php include (TEMPLATEPATH . '/offcanvas.php'); ?>
-		</aside> -->
-		<!-- END OFF CANVAS NAVIGATION -->
+	<?php if ( have_posts() ) : ?>
+
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+				
+				<section class="row posts-loop <?php if ('grid' == $blog_layout) { echo esc_attr('flex-row'); } ?>">
+					<?php /* Start the Loop */
+					while ( have_posts() ) : the_post(); ?>
+						<div class="post-wrapper <?php echo $post_column; ?>">
+							<?php get_template_part( 'template-parts/post/content', $post_template ); ?>
+						</div>
+					<?php endwhile; ?>
+				</section>
+				<?php the_posts_navigation(); ?>
+				
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	
+	<?php else : ?>
+
+			<?php get_template_part( 'template-parts/post/content', 'none' ); ?>
 		
-	</div>
-	<!-- END WRAPPER -->
-</body>
-</html>
+	<?php endif; ?>
+
+<?php 
+	// Sidebar
+	if ( 'content-sidebar' == $blog_sidebar_position || 'sidebar-content' == $blog_sidebar_position ) {
+		get_sidebar();	
+	}
+?>
+<?php get_footer(); ?>
