@@ -69,6 +69,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-2693491020856121">
+</amp-auto-ads>
 </body>
 </html>
